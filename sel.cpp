@@ -1,8 +1,8 @@
 #include <iostream>
 #include <sstream>
 using namespace std;
-void selection_sort(int *mas, unsigned int k){
- for( int i=0; i<k-1; i++){
+void selection_sort(int *mas, unsigned int k){  // функиця сортировки элементов
+ for( int i=0; i<k-1; i++){ \\
      int a=i+1;
      int min= mas[i+1];
      for (int j=i+1; j<k;j++) {
@@ -18,9 +18,9 @@ void selection_sort(int *mas, unsigned int k){
  }
 int main()
 {
-    unsigned int k;      // кол-во элементов
+    unsigned int k;                             // кол-во элементов
     cin>> k;
-    cin.get();//enter
+    cin.get();                                  
     int *mas = new int [k];
     string stroka;
     getline (cin, stroka);
